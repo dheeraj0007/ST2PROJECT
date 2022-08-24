@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato&family=Montserrat&family=Poppins:wght@100;400&family=Prompt:wght@100;300&family=Roboto:wght@100;300;400&family=Sora&family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Lato', sans-serif;
+        }
+        .checkbox:checked + .label .ball{
+            transform: translateX(19px);
+        }
+    </style>
+</head>
+<body class="bg-black ">
+
+    <!-- navbar -->
+    <div class="navbar text-white flex flex-row justify-around pt-5 md:pt-10 ">
+        <div class="navLeft flex flex-row justify-around">
+            <div class="text-3xl flex flex-col sm:flex-row space-x-2 sm:mt-4 md:mt-0"><span>Coding</span><span>Blocks</span></div>
+            <div class="flex ml-5 sm:ml-10 md:ml-20 mt-7 md:mt-3">
+                <input type="checkbox" class="checkbox opacity-0" id="checkbox" />
+                <label for="checkbox" class="label w-[50px] h-[26px] bg-black border-2 border-[#feba27] rounded-[50px] flex items-center justify-between p-[5px] scale-[1.5] relative sm:left-[-2rem]">
+                    <i class="fas fa-moon text-[#feba27]"></i>
+                    <i class="fas fa-sun text-[#feba27]"></i>
+                    <div class="ball w-[19px] h-[19px] bg-[#feba27] absolute rounded-[50%] transition ease-linear duration-[0.2s]"></div>
+                </label>
+            </div>
+        </div>
+
+        <div class="navMiddle lg:text-2xl md:text-xl">
+            <ul class="hidden md:flex flex-row space-x-5">
+                <li class="cursor-pointer">Home</li>
+                <li class="cursor-pointer">Services</li>
+                <li class="cursor-pointer">Interested</li>
+                <li class="cursor-pointer">Portfolio</li>
+                <li class="cursor-pointer">Education</li>
+            </ul>
+        </div>
+
+        <div class="navRight mt-4 md:mt-0 ">
+            <button class="bg-yellow-500 p-3 text-xl rounded-full shadow-lg shadow-yellow-500 hover:bg-white hover:text-yellow-500">Contact</button>
+        </div>
+    </div>
+
+
+    <!-- Middle section -->
+    <div class="main mt-16 text-white flex flex-col md:flex-row md:justify-evenly items-center">
+        <div class="flex flex-col space-y-10 md:space-y-14 md:w-[50vw]">
+            <h1 class="text-5xl md:text-6xl">Hy! I Am</h1>
+            <h1 class="text-5xl md:text-6xl text-[#feba27]">Coding Blocks</h1>
+            <p class="w-[60vw] md:w-[40vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit modi quo esse voluptate alias officia, fuga laudantium ipsa cum ullam.</p>
+            <button class="bg-yellow-500 p-3 text-xl rounded-full shadow-lg shadow-yellow-500 w-36 hover:bg-white hover:text-yellow-500">Hire me</button>
+            <div class="icons">
+                <ul class="flex flex-row space-x-10 text-[#feba27] mt-10 mb-10 md:mb-0">
+                    <li><i class="fa-brands fa-github fa-3x "></i></li>
+                    <li><i class="fa-brands fa-linkedin-in fa-3x "></i></li>
+                    <li><i class="fa-brands fa-instagram fa-3x "></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-10">
+            <img src="images/main-img.jpg" alt="" class="w-72 md:w-96 rounded-full mt-5 md:mt-0">
+        </div>
+    </div>
+
+
+    <!-- my awesome sevices section -->
+    <div class="sec2 flex flex-col md:flex-row mt-10 md:mt-20 justify-evenly items-center">
+        <div class="awesome-left flex flex-col">
+            <div class="awesome-left-upper flex flex-col space-y-8">
+                <h1 class="text-5xl md:text-6xl text-white">My Awesome</h1>
+                <h1 class="text-5xl md:text-6xl text-[#feba27]">services</h1>
+                <p class="text-white w-[60vw] md:w-[40vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nihil quaerat laboriosam veritatis maiores praesentium vero </p>
+            </div>
+            <div class="awesome-left-down mt-10 flex flex-row justify-between">
+                <div class="dcv">
+                    <button class="bg-yellow-500 p-3 text-xl rounded-full shadow-lg shadow-yellow-500 w-40 text-white hover:bg-white hover:text-yellow-500">Download CV</button>
+                </div>
+
+                <div class="card text-center flex-col hidden md:flex">
+                    <div class="cardMain w-56 h-72 bg-white rounded-md flex flex-col items-center justify-around">
+                        <div class="moji"><img src="images/shades.png" alt="" class="w-20 "></div>
+                        <div class="skillText break-normal">HTML5 ,CSS3 ,Javascript ,ReactJs ,NodeJs ,ExpressJs ,Mongodb </div>
+                    </div>
+                    <div class="learnMore mt-5">
+                        <button class="bg-white text-xl text-blue-500 rounded-md py-3 px-2">LEARN MORE</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="awesome-right flex flex-col space-y-10 mt-20 md:mt-0">
+
+            <div class="card text-center flex-col flex ">
+                <div class="cardMain w-80 md:w-56 h-72 bg-white rounded-md flex flex-col items-center justify-around">
+                    <div class="moji"><img src="images/hug.jpg" alt="" class="w-20 "></div>
+                    <div class="skillText break-normal">Figma ,Sketch ,Photoshop ,Adobe Illustrator ,Adobe xd </div>
+                </div>
+                <div class="learnMore mt-5">
+                    <button class="bg-white text-xl text-blue-500 rounded-md py-3 px-2">LEARN MORE</button>
+                </div>
+            </div>
+
+            <div class="card text-center flex-col flex md:hidden">
+                <div class="cardMain w-80 md:w-56 h-72 bg-white rounded-md flex flex-col items-center justify-around">
+                    <div class="moji"><img src="images/shades.png" alt="" class="w-20 "></div>
+                    <div class="skillText break-normal">HTML5 ,CSS3 ,Javascript ,ReactJs ,NodeJs ,ExpressJs ,Mongodb </div>
+                </div>
+                <div class="learnMore mt-5">
+                    <button class="bg-white text-xl text-blue-500 rounded-md py-3 px-2">LEARN MORE</button>
+                </div>
+            </div>
+
+            <div class="card text-center flex-col flex ml-0 md:-ml-10">
+                <div class="cardMain w-80 md:w-56 h-72 bg-white rounded-md flex flex-col items-center justify-around ">
+                    <div class="moji"><img src="images/bless.jpg" alt="" class="w-20 "></div>
+                    <div class="skillText break-normal">Bootstrap ,Material UI ,Style Components ,Nextjs ,Emailjs </div>
+                </div>
+                <div class="learnMore mt-5 ml-0 md:-ml-10">
+                    <button class="bg-white text-xl text-blue-500 rounded-md py-3 px-2">LEARN MORE</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="circles1001 flex flex-row items-center justify-center space-x-5 md:space-x-20 mt-16 md:mt-24">
+
+        <div class="flex flex-col text-center ">
+            <div class="gola text-[#feba27] bg-white p-10 rounded-full text-xl md:text-2xl font-bold">1+</div>
+            <div class="circlesText text-xl md:text-2xl mt-12">
+                <p class="text-white">years</p>
+                <p class="text-[#feba27]">Experience</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col text-center ">
+            <div class="gola text-[#feba27] bg-white p-10 rounded-full text-xl md:text-2xl font-bold">10+</div>
+            <div class="circlesText text-xl md:text-2xl mt-12">
+                <p class="text-white">completed</p>
+                <p class="text-[#feba27]">Projects</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col text-center ">
+            <div class="gola text-[#feba27] bg-white p-10 rounded-full text-xl md:text-2xl font-bold">1+</div>
+            <div class="circlesText text-xl md:text-2xl mt-12">
+                <p class="text-white">companies</p>
+                <p class="text-[#feba27]">Work</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- i want to work for these brands section -->
+    <div class="workForThese flex flex-col md:flex-row items-center justify-around mt-20 md:mt-32 mx-10 " >
+        <div class="workLeft text-white flex flex-col space-y-6 ">
+            <h1 class="text-5xl md:text-6xl ">I want to work for</h1>
+            <h1 class="text-5xl md:text-6xl text-[#feba27]">These brands</h1>
+            <p class="w-[65vw] md:w-[40vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Magni corrupti natus nihil quos quo aliquam placeat aut id! Repudiandae facilis illo cupiditate <br> eius ratione ducimus eveniet tempora, quo error iure.</p>
+        </div>
+        <div class="workRight">
+            <!-- image wala div -->
+            <img src="images/workImg.png" alt="" class="w-96 md:w-[40rem] mt-10 md:mt-0">
+        </div>
+    </div>
+
+    <!-- recent projects section -->
+    <div class="recentProjects flex flex-col space-y-8 mt-16 items-center">
+        <h1 class="text-4xl md:text-5xl text-white">Recent Projects</h1>
+        <h1 class="text-4xl md:text-5xl text-[#feba27]">Portfolio</h1>
+    </div>
+
+    <!-- 2nd cards div -->
+    <div class="cards2Main flex flex-col md:flex-row justify-center md:space-x-10 items-center text-white w-[98vw] py-10 space-y-10 md:space-y-0">
+
+        <div class="cards2 flex flex-col items-center justify-around w-[85%] md:w-[50%] lg:w-[20%] h-96 text-center border-2 border-white rounded-xl space-y-4 bg-[#161915] pb-10 pt-4 hover:-translate-y-3 transition-transform">
+            <h2 class="text-3xl">Coding Blocks</h2>
+            <p class="mx-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur, dolorum incidunt dolores dolor ea praesentium delectus obcaecati. Provident, vel!</p>
+            <button class="text-xl bg-black rounded-full px-7 py-4 shadow-xl shadow-[#1b513b]">view</button>
+        </div>
+
+        <div class="cards2 flex flex-col items-center justify-around w-[85%] md:w-[50%] lg:w-[20%] h-96 text-center border-2 border-white rounded-xl space-y-4 bg-[#161915] pb-10 pt-4 hover:-translate-y-3 transition-transform">
+            <h2 class="text-3xl">Coding Blocks</h2>
+            <p class="mx-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur, dolorum incidunt dolores dolor ea praesentium delectus obcaecati. Provident, vel!</p>
+            <button class="text-xl bg-black rounded-full px-7 py-4 shadow-xl shadow-[#1b513b]">view</button>
+        </div>
+
+        <div class="cards2 flex flex-col items-center justify-around w-[85%] md:w-[50%] lg:w-[20%] h-96 text-center border-2 border-white rounded-xl space-y-4 bg-[#161915] pb-10 pt-4 hover:-translate-y-3 transition-transform">
+            <h2 class="text-3xl">Coding Blocks</h2>
+            <p class="mx-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur, dolorum incidunt dolores dolor ea praesentium delectus obcaecati. Provident, vel!</p>
+            <button class="text-xl bg-black rounded-full px-7 py-4 shadow-xl shadow-[#1b513b]">view</button>
+        </div>
+
+        <div class="cards2 flex flex-col items-center justify-around w-[85%] md:w-[50%] lg:w-[20%] h-96 text-center border-2 border-white rounded-xl space-y-4 bg-[#161915] pb-10 pt-4 hover:-translate-y-3 transition-transform">
+            <h2 class="text-3xl">Coding Blocks</h2>
+            <p class="mx-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur, dolorum incidunt dolores dolor ea praesentium delectus obcaecati. Provident, vel!</p>
+            <button class="text-xl bg-black rounded-full px-7 py-4 shadow-xl shadow-[#1b513b]">view</button>
+        </div>
+
+    </div>
+
+
+    <!-- clients always get exceptional work from me -->
+    <div class="exceptWork flex flex-col mt-16 justify-around ">
+        <h1 class="text-3xl md:text-4xl break-normal text-white mx-10 ml-10 md:ml-20">Clients always get <span class="text-[#feba27]">Exceptional Work</span> from me...</h1>
+        <div class="minima w-[97vw] md:w-[40vw] mx-auto border-4 border-white rounded-xl space-y-4 flex flex-col items-center bg-[#3e403d] pt-7 mt-10 pb-10">
+            <img src="images/dark.jpg" alt="" class="rounded-full w-20">
+            <p class="text-md md:text-xl text-[#feba27]">Lorem ipsum dolor sit amet consectetur minima!</p>
+            <p class="text-white text-xl">2015-2019</p>
+            <button class="rounded-3xl bg-white py-3 px-7">Visit</button>
+        </div>
+    </div>
+
+    <!-- get in touch -->
+    <div class="contactSec flex flex-col md:flex-row justify-around  mt-10 md:mt-20 items-center mb-20">
+        <div class="flex flex-col text-4xl md:text-5xl space-y-7 mt-10 md:mt-0">
+            <h1 class="text-white">Get in Touch</h1>
+            <h1 class="text-[#feba27]">Contact me</h1>
+        </div>
+        <div class="flex flex-col space-y-10 mt-20 md:mt-32">
+            <input type="text" name="" id="" placeholder="Name" class="rounded-md p-3 w-80 md:w-96 border-2 border-yellow-500">
+            <input type="email" name="" id="" placeholder="Email" class="rounded-md p-3 w-80 md:w-96 border-2 border-yellow-500">
+            <textarea name="" id="" cols="30" rows="3" placeholder="Message" class="rounded-md p-3 border-2 border-yellow-500"></textarea>
+            <button  class="bg-yellow-500 p-3 text-xl rounded-full shadow-lg shadow-yellow-500 hover:bg-white hover:text-yellow-500 w-20 mx-auto text-white">Send</button>
+        </div>
+    </div>
+
+
+    <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,32L120,53.3C240,75,480,117,720,122.7C960,128,1200,96,1320,80L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+
+        <div class="meriMail absolute top-10 text-white md:top-36 text-sm md:text-xl left-[30vw] md:left-[40vw]">
+            <p>dheerajgulati544@gmail.com</p>
+            <div class="icons md:ml-10 ml-0">
+                <ul class="flex flex-row space-x-10 text-white mt-0 md:mt-10 mb-0 md:mb-10">
+                    <li class="text-xs md:text-xl"><i class="fa-brands fa-instagram fa-2x "></i></li>
+                    <li class="text-xs md:text-xl"><i class="fa-brands fa-facebook-f fa-2x"></i></li>
+                    <li class="text-xs md:text-xl"><i class="fa-brands fa-github fa-2x "></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
